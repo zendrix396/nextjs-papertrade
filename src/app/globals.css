@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    color: aliceblue;
+    background-color: black;
+    user-select: none;
+    scroll-behavior: smooth;
+    /* overflow: scroll; */
+    /* scrollbar-width: none; */
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    filter: blur(0.9rem);
+}
+
+nav{
+    position: fixed;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 10%;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+
+}
+
+nav p{
+    cursor: pointer;
+    display: flex;
+    gap: 4rem;
+    flex: 1;
+}
+.logo{
+    display: flex;
+    flex: 5;
+    font-weight: 600;
+    font-size: 125%;
+    cursor: default;
+}
+.login{
+    /* padding: 5px 20px; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+}
+
+.home{
+    width: 100vw;
+    height: 100svh;
+    align-items: center;
+}
+
+.auth{
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
