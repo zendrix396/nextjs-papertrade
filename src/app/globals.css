@@ -21,24 +21,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-video{
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    object-fit: cover;
-    filter: blur(0.9rem);
-}
 
 nav{
     position: fixed;
-    top: 10px;
+    /* top: 10px; */
     display: flex;
     justify-content: space-between;
     padding: 1% 10%;
     align-items: center;
     width: 100%;
     z-index: 10;
+    backdrop-filter: blur(0.8rem);
+    background-color: rgba(0, 0, 0, 0.3);
 
 }
 
@@ -66,10 +60,12 @@ nav p{
     font-size: 5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     position: absolute;
-    width: 100vw;
-    height: 90vh;
+    width: 40vw;
+    height: 80vh;
+    margin: 4rem 8rem;
+    flex-direction: column;
 }
 
 .home{
@@ -78,12 +74,76 @@ nav p{
     align-items: center;
 }
 
-.auth{
-    height: 150vh;
+.tradedashboard{
+    position: relative;
+    top: 9rem;
+    left: 55vw;
+    height: 60vh;
+    width: 40vw;
+    backdrop-filter: blur(0.8rem);
+    border: 5px solid rgba(215, 207, 207, 0.249);
+    border-radius: 10px;
+}
+button {
+    background-color: rgba(11, 177, 11, 0.812);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.hero-buttons button{
+    position: relative;
+    padding: 10px 50px;
+    margin: 10px;
+    font-size: 1rem;
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 1rem;
+}
+.specs{
     width: 100vw;
+    height: 100vh;
+}
+
+footer{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(119, 198, 8, 0.042);
+}
+
+footer .navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    align-items: center;
+}
+footer .socialmedia{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+footer p{
+    cursor: pointer;
+}
+footer p:hover{
+    color: rgba(11, 177, 11, 0.812);
 }

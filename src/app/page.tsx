@@ -7,25 +7,24 @@ export default function Home() {
         <p>Home</p>
         <p>About</p>
         <p>Contact</p>
-        <p className="login">Login</p>
+        <button className="login">Login</button>
       </nav>
       <section className="home">
         {/* when the page is reloaded the underline effect drops by */}
         {/* and this heading will also have an effect of letter zooming when hovered */}
-        <p className="heading">Learn to trade, at it's finest!</p>
-        <video src="background.mp4" autoPlay muted loop playsInline></video>
-        <div className="auth">
-          <p>
-            New here?{" "}
-            <a href="#" className="register">
-              Register
-            </a>{" "}
-            or{" "}
-            <a className="loginbutton" href="#">
-              Login
-            </a>
-          </p>
+        <div className="heading">
+          <p>Learn to trade, at it's finest!</p>
+          <div className="hero-buttons">
+            <button className="gettingStarted">Get Started</button>
+            <button className="faq">Read FAQs</button>
+          </div>
         </div>
+        {/* <video src="background.mp4" autoPlay muted loop playsInline></video> */}
+        <img
+          src="https://ik.imagekit.io/tradingmedia/assets/guide/dashboard-20220828.png"
+          alt=""
+          className="tradedashboard"
+        />
       </section>
       <section className="specs">
         {/* a line tale kind of thing getting animated and showing different tabs one side each like a ladder with the features of the app */}
@@ -35,9 +34,11 @@ export default function Home() {
       </section>
       <footer>
         {/* [generic footer with gradient background] */}
-        <p>Home</p>
-        <p>About</p>
-        <p>Contact Us</p>
+        <div className="navigation">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact Us</p>
+        </div>
         <div className="socialmedia">
           Follow us on Social Media:
           <p>Instagram</p>
